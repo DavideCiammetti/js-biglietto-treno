@@ -11,7 +11,7 @@ con questi primi 2 punti si tratta chiaramente di variabili per questo avremo:
 
 - la seconda variabile --> **etaPassaggero** per identificare appunto l'età del passeggero
 
-- una terza variabile che utilizzerò poi per quando dovrò calcolare il prezzo totale del biglietto e la chiamerò -->  **prezzoNonScontato**
+- una terza variabile che utilizzerò poi per quando dovrò calcolare il prezzo totale del biglietto e la chiamerò -->  **prezzoTotale**
 
 - una quarta variabile invece la userò per il prezzo del biglietto scontato e la chiamerò --> **prezzoScontato**
 
@@ -33,17 +33,18 @@ per questa seconda parte della richiesta il testo ci chiede di calcolare il prez
 
 per entrare più nel dettaglio dell'analisi avremo sicuramente una prima condizione (if) per vedere se il passeggero è un minorenne quindi ha meno di 18 anni oppure se super i 65 anni e nel caso in cui la condizione dovesse verificarsi applicare lo sconto
 
-prezzoNonScontato = kmDaPercorrere * 0.21
+prezzoTotale = kmDaPercorrere * 0.21
 
 SE (etaPassaggero < 18)
 
-   prezzoScontato = prezzoNonScontato - (prezzoNonScontato * 20 / (100))
+   prezzoScontato = prezzoTotale - (prezzoTotale * 20 / (100))
    console.log(prezzoScontato) 
 
 ALTRIMENTI SE (etaPassaggero > 65)
 
-   prezzoScontato = prezzoNonScontato - (prezzoNonScontato * 40 / (100))
+   prezzoScontato = prezzoTotale - (prezzoTotale * 40 / (100))
     console.log(prezzoScontato)
 
 ALTRIMENTI 
-    console.log(prezzoNonScontato)
+
+    console.log(prezzoTotale)
