@@ -18,14 +18,14 @@ prezzoTotale = kmDaPercorrere * 0.21
 if(etaPassaggero < 18){
     prezzoScontato = (prezzoTotale * 20 / (100));
     prezzoTotale = prezzoTotale - prezzoScontato;
-    console.log('il prezzo scontato è:' + ' ' + prezzoTotale);
+    console.log('il prezzo scontato è:' + ' ' + prezzoTotale.toFixed(2));
 
 }
 else if (etaPassaggero > 65) {          // questa seconda if serve per lo sconto per gli over 65
     prezzoScontato = (prezzoTotale * 40 / (100));
     prezzoTotale = prezzoTotale - prezzoScontato;
-    console.log('il prezzo scontato è:' + ' ' + prezzoTotale);
+    console.log('il prezzo scontato è:' + ' ' + prezzoTotale.toFixed(2));
 }
 else{       
-    console.log('il prezzo totale è:' + ' ' + prezzoTotale);    // questa seconda if serve per lo sconto per chi ha un eta che va dai 18 ai 65 anni e quindi non ha sconto
+    console.log('il prezzo totale è:' + ' ' + prezzoTotale.toFixed(2));    // questa seconda if serve per lo sconto per chi ha un eta che va dai 18 ai 65 anni e quindi non ha sconto
 }

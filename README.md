@@ -37,14 +37,19 @@ prezzoTotale = kmDaPercorrere * 0.21
 
 SE (etaPassaggero < 18)
 
-   prezzoScontato = prezzoTotale - (prezzoTotale * 20 / (100))
-   console.log(prezzoScontato) 
+   prezzoScontato = (prezzoTotale * 20 / (100))
+   prezzoTotale = prezzoTotale - prezzoScontato
+    console.log('il prezzo scontato è:' + ' ' + prezzoTotale.toFixed(2))
 
 ALTRIMENTI SE (etaPassaggero > 65)
 
-   prezzoScontato = prezzoTotale - (prezzoTotale * 40 / (100))
-    console.log(prezzoScontato)
+   prezzoScontato = (prezzoTotale * 40 / (100))
+   prezzoTotale = prezzoTotale - prezzoScontato
+    console.log('il prezzo scontato è:' + ' ' + prezzoTotale.toFixed(2))
 
 ALTRIMENTI 
 
-    console.log(prezzoTotale)
+     console.log('il prezzo scontato è:' + ' ' + prezzoTotale.toFixed(2))
+
+
+### per arrotondare a 2 cifre decimali uso la funzione toFixed()
