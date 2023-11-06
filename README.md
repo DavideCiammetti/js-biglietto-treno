@@ -11,7 +11,7 @@ con questi primi 2 punti si tratta chiaramente di variabili per questo avremo:
 
 - la seconda variabile --> **etaPassaggero** per identificare appunto l'età del passeggero
 
-- una terza variabile che utilizzerò poi per quando dovrò scontare il biglietto e la chiamerò -->  **prezzoNonScontato**
+- una terza variabile che utilizzerò poi per quando dovrò calcolare il prezzo totale del biglietto e la chiamerò -->  **prezzoNonScontato**
 
 - una quarta variabile invece la userò per il prezzo del biglietto scontato e la chiamerò --> **prezzoScontato**
 
